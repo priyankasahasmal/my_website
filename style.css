@@ -207,6 +207,7 @@ footer {
   text-align: center;
   border-radius: 4px;
   transition: transform 0.3s;
+  display: flex;
 }
 
 .button button:hover {

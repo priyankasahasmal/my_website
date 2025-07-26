@@ -179,7 +179,7 @@ footer {
 }
 
 
-.button-section {
+/* .button-section {
   padding: 50px 20px;
   background-color: #111;
 }
@@ -212,4 +212,50 @@ footer {
 
 .button button:hover {
   transform: scale(1.1);
+}
+ */
+
+/* Responsive Button Section */
+.button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.button button {
+  width: 90%; /* Use percentage width for responsiveness */
+  max-width: 600px;
+  height: 60px;
+  background-color: gray;
+  color: white;
+  font-size: 20px;
+  text-align: left;
+  padding-left: 20px;
+  border-radius: 4px;
+  transition: transform 0.3s;
+}
+
+.button button:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Text Sizes */
+.button-section h1 {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Mobile Specific Adjustments */
+@media (max-width: 768px) {
+  .button-section h1 {
+    font-size: 24px;
+    padding: 0 10px;
+  }
+
+  .button button {
+    font-size: 18px;
+    height: 50px;
+  }
 }
